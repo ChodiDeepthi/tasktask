@@ -1,12 +1,33 @@
 import React from 'react';
+import Item from './Item';
 import styles from './Items.module.css'; // Import the CSS module for Items
 
 const Items = () => {
   return (
     <div className={styles.items}>
-      <p>Item 1</p>
-      <p>Item 2</p>
-      <p>Item 3</p>
+      {/* Render 6 Item components */}
+      <div className={styles.itemRow}>
+      <div className="item">
+        <Item />
+        </div>
+        <div className="item">
+        <Item />
+        </div>
+        <div className="item">
+        <Item />
+        </div>
+      </div>
+      <div className={styles.itemRow}>
+      <div className="item">
+        <Item />
+        </div>
+        <div className="item">
+        <Item />
+        </div>
+        <div className="item">
+        <Item />
+        </div>
+      </div>
     </div>
   );
 };
