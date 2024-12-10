@@ -1,5 +1,12 @@
-export default function  Component2(){
 
 
+export default function  Component1(){
+
+    return (
+        <div>
+          
+         
+        </div>
+      );
     
 }
