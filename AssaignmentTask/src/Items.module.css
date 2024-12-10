@@ -1,0 +1,16 @@
+.items {
+    width: 80%;
+    height: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .items p {
+    margin: 5px 0;
+  }
+  
