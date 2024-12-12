@@ -3,7 +3,7 @@
   flex-direction: column; /* Stack rows vertically */
   gap: 10px; /* Space between rows */
   height: 100%; /* Full height for flexibility */
-  background-color:#ffffff;
+  background-color: #f0f0f0;
 }
 .row {
   flex: 1; /* Equal height rows */

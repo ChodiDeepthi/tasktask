@@ -1,6 +1,6 @@
 .itemsContainer {
     width: 100%; /* Equal width for each element */
-    height: 220px; /* Adjust as needed */
+    height: 160px; /* Adjust as needed */
    
     border: 1px solid #ccc; /* Optional border */
     border-radius: 12px; /* Rounded corners */

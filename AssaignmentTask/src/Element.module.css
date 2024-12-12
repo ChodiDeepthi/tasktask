@@ -1,6 +1,6 @@
 .elementBox {
     width: 30%; /* Equal width for each element */
-    height: 60px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
     background-color: #d1e8e2; /* Light background for visibility */
     border: 1px solid #ccc; /* Optional border */
     border-radius: 5px; /* Rounded corners */

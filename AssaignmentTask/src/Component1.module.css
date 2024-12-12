@@ -3,13 +3,14 @@
       margin-right:20px;
       flex: 1; /* Adjusted proportion */
       max-width: 90%; 
-      background-color: #f0f0f0; /* Light grey for differentiation */
+      /* Light grey for differentiation */
       box-shadow: 0px 4px 8px rgba(0,0,0,0.1) ;
       display: flex;
       flex-direction: column; 
       gap: 10px; /* Space between rows */
-      padding:20px;
+      padding:10px;
       border-radius: 12px;
+      background-color: #f0f0f0;
     
   }
 
