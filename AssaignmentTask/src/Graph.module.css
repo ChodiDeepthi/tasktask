@@ -1,0 +1,11 @@
+.itemsContainer {
+    width: 100%; /* Equal width for each element */
+    height: 220px; /* Adjust as needed */
+   
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+    background-color: #f0f0f0;
+  }
+  

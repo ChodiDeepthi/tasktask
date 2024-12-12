@@ -1,12 +1,12 @@
-import React from 'react';
-import styles from './Item.module.css'; // Import the CSS module for Item
+import Element from './Element';
+import styles from './Item.module.css';
 
-const Item = () => {
+export default function Item() {
   return (
-    <div className={styles.item}>
-      <p>Item</p>
+    <div className={styles.itemRow}>
+      <Element />
+      <Element />
+      <Element />
     </div>
   );
-};
-
-export default Item;
+}

@@ -1,0 +1,6 @@
+.itemsContainer {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 10px; /* Space between rows */
+    height: 100%; /* Full height for flexibility */
+  }

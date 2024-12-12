@@ -1,35 +1,15 @@
-import React from 'react';
 import Item from './Item';
-import styles from './Items.module.css'; // Import the CSS module for Items
+import styles from './Items.module.css';
 
-const Items = () => {
+export default function Items() {
   return (
-    <div className={styles.items}>
-      {/* Render 6 Item components */}
-      <div className={styles.itemRow}>
-      <div className="item">
+    <div className={styles.itemsContainer}>
+      <div className={styles.row}>
         <Item />
-        </div>
-        <div className="item">
-        <Item />
-        </div>
-        <div className="item">
-        <Item />
-        </div>
       </div>
-      <div className={styles.itemRow}>
-      <div className="item">
+      <div className={styles.row}>
         <Item />
-        </div>
-        <div className="item">
-        <Item />
-        </div>
-        <div className="item">
-        <Item />
-        </div>
       </div>
     </div>
   );
-};
-
-export default Items;
+}

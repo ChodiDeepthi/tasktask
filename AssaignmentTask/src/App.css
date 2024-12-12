@@ -1,17 +1,19 @@
 .app-container {
     display: flex;
     height: 100vh; /* Full viewport height */
+    padding:30px;
+    background-color: rgb(238, 226, 238); /* Light grey for differentiation */
   }
   
   .component1 {
     flex: 1; /* Adjusted proportion */
-    max-width: 30%; /* Ensures it's 20% */
-    background-color: #f0f0f0; /* Light grey for differentiation */
+    max-width: 20%; /* Ensures it's 20% */
+     /* Light grey for differentiation */
   }
   
   .component2 {
     flex: 4; /* Adjusted proportion */
-    max-width: 70%; /* Ensures it's 80% */
-    background-color: #e0e0e0; /* Slightly darker grey */
+    max-width: 80%; /* Ensures it's 80% */
+   
   }
   
