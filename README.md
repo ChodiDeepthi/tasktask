@@ -14,3 +14,7 @@ showcasing a seamless integration of React's state management and D3.js for data
 
 # Tech Stack
 **React** ,**D3.js**, **CSS Modules**, **Vite**
+
+to run : cd AssaignmentTasks ,
+          npm install ,
+          npm run dev .
