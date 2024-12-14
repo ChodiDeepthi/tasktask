@@ -49,11 +49,11 @@ export default function Graph({ data, setdata }) {
       .range([height, 0])
       .clamp(true); // Ensure values outside the domain are clamped
 
-    // X-axis Scale
+    // X-axis Scale with sequential values
     const xScale = d3.scaleBand()
-      .domain(data.map(d => d.name)) // Use `name` from the data for X-axis labels
+      .domain(data.map((_, i) => i + 1)) // Sequential values 1, 2, 3, ...
       .range([0, width])
-      .padding(0.01);
+      .padding(0.1); // Add padding between bars
 
     // Add Y-axis with fixed ticks (0%, 25%, 50%, 75%, 100%, 125%, 150%)
     svg.append('g')
@@ -72,7 +72,7 @@ export default function Graph({ data, setdata }) {
       .data(data)
       .enter()
       .append('rect')
-      .attr('x', d => xScale(d.name)) // Position each bar based on the `name` property
+      .attr('x', (_, i) => xScale(i + 1)) // Position each bar based on its index
       .attr('y', d => yScale(d.value)) // Position the bar based on the `value`
       .attr('width', xScale.bandwidth()) // Bar width based on scale
       .attr('height', d => Math.max(0, height - yScale(d.value))) // Ensure non-negative height

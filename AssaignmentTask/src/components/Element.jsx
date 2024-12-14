@@ -7,14 +7,14 @@ export default function Element({ item, data, setdata }) {
   // Define the addElement function
   function addElement(item, data, setdata) {
     // Add the item to the existing data array with a new unique ID
-    setdata([...data, { id: count, name: item.name, value: item.value }]);
+    setdata([...data, { id: count, name: item.name, value: item.value}]);
     setcount(count + 1); // Increment the count for the next ID
   }
 
   return (
     <div className={styles.elementBox}>
       <button onClick={() => addElement(item, data, setdata)}>
-        {item.id} 
+         {item.name}
       </button>
     </div>
   );

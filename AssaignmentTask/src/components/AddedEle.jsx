@@ -4,11 +4,11 @@ import styles from './AddedEle.module.css';
 export default function AddedEle({ item, data, setdata }) {
   const [isSelected, setIsSelected] = useState(false);
 
-  // Function to delete the item
-  function deleteData(itemId) {
-    const updatedData = data.filter(item => item.id !== itemId);
-    setdata(updatedData);
+  function deleteData(item) {
+    setdata(data.filter((element)=>(item!=element)))
+
   }
+  
 
   // Toggle selection on click
   function toggleSelection() {
@@ -24,7 +24,7 @@ export default function AddedEle({ item, data, setdata }) {
       <hr />
       <div className={styles.content}>
         Run
-        <button onClick={() => deleteData(item.id)}>
+        <button onClick={() => deleteData(item)}>
           X
         </button>
       </div>

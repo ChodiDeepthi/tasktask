@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [datas,setdata]=useState([
     { id:3,name: "warmup", value: 75 },
-    { id:1,name: "active", value: 100 },
+    { id:1,name: "active", value: 100},
     { id:2,name: "cooldown", value: 50 },
    
   ]);
