@@ -1,9 +1,28 @@
 .itemsContainer {
-    width: 100%; /* Equal width for each element */
-    height: 160px; /* Adjust as needed */
-    background-color: #f0f0f0; /* Light background for visibility */
-    border: 1px solid #ccc; /* Optional border */
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 20px;
-  }
-  
+  width: 100%; /* Full width */
+  height: 160px; /* Fixed height */
+  background-color: #f0f0f0; /* Light background for visibility */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: space-between; /* Distribute space equally between elements */
+}
+
+hr {
+  width: 100%; /* Make the horizontal rule full width */
+  border: 0; /* Remove default border */
+  border-top: 1px solid #ccc; /* Style the hr */
+  margin: 25px; /* Remove default margin */
+}
+
+.content {
+  background-color: violet; /* Set background color to violet */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  height: 60px; /* Set a fixed height for the content area */
+}

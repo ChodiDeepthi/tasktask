@@ -46,11 +46,12 @@ export default function Graph({ data, setdata }) {
     // Define the fixed Y-axis domain (0% to 150%)
     const yScale = d3.scaleLinear()
       .domain([0, 150]) // Fixed range from 0% to 150%
-      .range([height, 0]);
+      .range([height, 0])
+      .clamp(true); // Ensure values outside the domain are clamped
 
     // X-axis Scale
     const xScale = d3.scaleBand()
-      .domain(data.map(d => d.name)) // Use `id` from the data for X-axis labels
+      .domain(data.map(d => d.name)) // Use `name` from the data for X-axis labels
       .range([0, width])
       .padding(0.01);
 
@@ -71,15 +72,16 @@ export default function Graph({ data, setdata }) {
       .data(data)
       .enter()
       .append('rect')
-      .attr('x', d => xScale(d.name)) // Position each bar based on the `id` property
+      .attr('x', d => xScale(d.name)) // Position each bar based on the `name` property
       .attr('y', d => yScale(d.value)) // Position the bar based on the `value`
       .attr('width', xScale.bandwidth()) // Bar width based on scale
-      .attr('height', d => height - yScale(d.value)) // Height based on the `value`
+      .attr('height', d => Math.max(0, height - yScale(d.value))) // Ensure non-negative height
       .attr('fill', 'violet');
   }, [data, dimensions]); // Re-run effect whenever `data` or `dimensions` change
 
   return (
     <div className={styles.itemsContainer}>
+      {console.log(data)}
       <svg ref={chartRef}></svg>
     </div>
   );

@@ -9,10 +9,10 @@ export default function Items({data,setdata}) {
     
     <div className={styles.itemsContainer}>
       <div className={styles.row}>
-        <Item item={topdata} setitem={settopdata} data={data} setdata={setdata}/>
+        <Item  item={topdata} setitem={settopdata} data={data} setdata={setdata}/>
       </div>
       <div className={styles.row}>
-        <Item item={bottomdata} setitem={setbottomdata} data={data} setdata={setdata} />
+        <Item  item={bottomdata} setitem={setbottomdata} data={data} setdata={setdata} />
       </div>
     </div>
   );
