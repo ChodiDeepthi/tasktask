@@ -14,7 +14,7 @@ export default function Element({ item, data, setdata }) {
   return (
     <div className={styles.elementBox}>
       <button onClick={() => addElement(item, data, setdata)}>
-        {item.id} {/* Show the id of the item on the button */}
+        {item.id} 
       </button>
     </div>
   );

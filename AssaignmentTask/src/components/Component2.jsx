@@ -10,7 +10,7 @@ export default function Component2({ data, setdata }) {
         {data.map((item) => {
           return (
             <div key={item.id}>
-              <AddedEle item={item} />
+              <AddedEle item={item} data={data} setdata={setdata} />
             </div>
           );
         })}

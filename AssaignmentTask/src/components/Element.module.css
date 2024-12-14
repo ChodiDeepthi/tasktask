@@ -13,7 +13,7 @@
 .elementBox button {
   width: 100%; /* Full width of the parent .elementBox */
   height: 100%; /* Full height of the parent .elementBox */
-  background-color: violet; /* Violet background color */
+  background-color: rgb(209, 125, 209); /* Violet background color */
   color: white; /* White text for contrast */
   border: none; /* Remove default button border */
   border-radius: inherit; /* Inherit rounded corners from parent */
@@ -21,6 +21,7 @@
   cursor: pointer; /* Pointer cursor on hover */
   outline: none; /* Remove focus outline */
    /* Smooth hover effect */
+  color: black;
 }
 
 .elementBox button:hover {
