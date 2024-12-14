@@ -13,4 +13,4 @@ showcasing a seamless integration of React's state management and D3.js for data
 - **Customizable Data**: Easily modify the initial data or extend functionality for new use cases.
 
 # Tech Stack
--**React** ,**D3.js**, **CSS Modules**, **Vite**
+**React** ,**D3.js**, **CSS Modules**, **Vite**
