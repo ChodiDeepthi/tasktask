@@ -7,14 +7,14 @@
   margin-bottom: 20px;
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Arrange items in a column */
-  justify-content: space-between; /* Distribute space equally between elements */
+  justify-content: center; /* Distribute space equally between elements */
 }
 
 hr {
   width: 100%; /* Make the horizontal rule full width */
   border: 0; /* Remove default border */
   border-top: 1px solid #ccc; /* Style the hr */
-  margin: 25px; /* Remove default margin */
+  margin:0px; /* Remove default margin */
 }
 
 .content {
@@ -25,4 +25,14 @@ hr {
   font-size: 16px; /* Adjust font size */
   font-weight: bold; /* Make text bold */
   height: 60px; /* Set a fixed height for the content area */
+
+  margin:15px 10px;
+  
+  
+}
+.matter{
+  padding:8px;
+  
+  
+ 
 }

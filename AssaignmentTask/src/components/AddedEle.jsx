@@ -5,12 +5,14 @@ export default function AddedEle({item}) {
 
 
     <div className={styles.itemsContainer}>
-        <hr/>
+        
+        <div className={styles.matter}>{item.name} </div>
+        <hr className={styles.up}/>
           <div className={styles.content}>
-                  {item.name} {item.value}
+                  Run 
           </div>
         
-        <hr/>
+        <hr className={styles.down}/>
     </div>
   );
 }
