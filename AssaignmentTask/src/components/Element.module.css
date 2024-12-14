@@ -1,0 +1,28 @@
+.elementBox {
+  width: 30%; /* Equal width for each element */
+  height: 40px; /* Adjust as needed */
+  background-color: #d1e8e2; /* Light background for visibility */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Ensure the button is centered */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.elementBox button {
+  width: 100%; /* Full width of the parent .elementBox */
+  height: 100%; /* Full height of the parent .elementBox */
+  background-color: violet; /* Violet background color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default button border */
+  border-radius: inherit; /* Inherit rounded corners from parent */
+  font-size: 14px; /* Adjust font size as needed */
+  cursor: pointer; /* Pointer cursor on hover */
+  outline: none; /* Remove focus outline */
+   /* Smooth hover effect */
+}
+
+.elementBox button:hover {
+  background-color: #d48fff; /* Slightly lighter violet on hover */
+}
